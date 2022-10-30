@@ -14,4 +14,8 @@ public class Author {
     public String getSecondName() {
         return this.secondName;
     }
+
+    public String toString() {
+        return getFirstName() + " " + getSecondName();
+    }
 }
