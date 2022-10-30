@@ -12,6 +12,6 @@ public class Main {
         System.out.println(firstBook.getPublishingYear());
 
         Book secondBook = new Book("The Boys From Brazil", new Author("Ira", "Levin"), 1970);
-        System.out.println("Название книги = " + secondBook.getBookName() + " Автор = " + secondBook.getAuthor() + " " + author.getSecondName() + " Год выпуска = " + secondBook.getPublishingYear());
+        System.out.println("Название книги = " + secondBook.getBookName() + " Автор = " + secondBook.getAuthor() + " Год выпуска = " + secondBook.getPublishingYear());
     }
 }
