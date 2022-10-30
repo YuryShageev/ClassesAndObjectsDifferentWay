@@ -15,7 +15,7 @@ public class Book {
     }
 
     public Author getAuthor() {
-        return author;
+        return this.author;
     }
 
     public int getPublishingYear() {
