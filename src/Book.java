@@ -36,4 +36,16 @@ public class Book {
         return Objects.equals(bookName, book.bookName) && Objects.equals(author, book.author) && publishingYear == book.publishingYear;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(bookName, author, publishingYear);
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookName=" + bookName + '\'' +
+                ", author=" + author +
+                ", publishingYear=" + publishingYear + '}';
+    }
 }
