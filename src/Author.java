@@ -25,6 +25,6 @@ public class Author {
             return false;
         }
         Author thirdBook = (Author) ob;
-        return secondName.equals(thirdBook.secondName);
+        return secondName.equals(thirdBook.secondName) && firstName.equals(thirdBook.firstName);
     }
 }
