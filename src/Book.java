@@ -26,6 +26,11 @@ public class Book {
         this.publishingYear = publishingYear;
     }
 
-
-
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Book book = (Book) obj;
+        return bookName.equals(book.bookName) && author.equals(book.author) && publishingYear == book.publishingYear;
+    }
 }
