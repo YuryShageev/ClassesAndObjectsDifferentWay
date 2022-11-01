@@ -18,7 +18,7 @@ public class Author {
     }
 
     public String toString() {
-        return getFirstName() + " " + getSecondName();
+        return firstName + " " + secondName;
     }
 
     @Override
