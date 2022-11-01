@@ -35,11 +35,4 @@ public class Author {
         return Objects.hash(firstName, secondName);
     }
 
-//    @Override
-//    public String toString() {
-//        return "Author{" +
-//                "firstName='" + firstName + '\'' +
-//                ", secondName='" + secondName + '\'' +
-//                '}';
-//    }
 }
