@@ -10,6 +10,7 @@ public class Book {
         this.bookName = bookName;
         this.author = author;
         this.publishingYear = publishingYear;
+
     }
 
     public String getBookName() {
@@ -41,12 +42,12 @@ public class Book {
         return Objects.hash(bookName, author, publishingYear);
     }
 
+
     @Override
     public String toString() {
-        return "Book{" +
-                "bookName='" + bookName + '\'' +
-                ", author=" + author +
-                ", publishingYear=" + publishingYear +
+        return "Название книги: " + bookName  +
+                " Имя автора: " + author.toString() +
+                " Год публикации: " + publishingYear +
                 '}';
     }
 
