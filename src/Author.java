@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Author {
     private final String firstName;
     private final String secondName;
@@ -16,15 +18,21 @@ public class Author {
     }
 
     public String toString() {
-        return getFirstName() + " " + getSecondName();
+        return firstName + " " + secondName;
     }
 
     @Override
     public boolean equals(Object ob) {
-        if (this.getClass() != ob.getClass()) {
+        if (this == ob) return false;
+        if (ob == null || getClass() != ob.getClass())
             return false;
-        }
-        Author thirdBook = (Author) ob;
-        return secondName.equals(thirdBook.secondName);
+        Author author = (Author) ob;
+        return Objects.equals(firstName, author.firstName) && Objects.equals(secondName, author.secondName);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, secondName);
+    }
+
 }

@@ -5,9 +5,9 @@ public class Main {
 
         System.out.println("Task 1");
 
-        Author author = new Author("John", "Scalzi");
-        Book firstBook = new Book("Old Man's War", author, 2005);
-        System.out.println("Название книги = " + firstBook.getBookName() + " Автор = " + author.getFirstName() + " " + author.getSecondName() + " Год выпуска = " + firstBook.getPublishingYear());
+//
+        Book firstBook = new Book("Old Man's War", new Author("John", "Scalzi"), 2005);
+        System.out.println("Название книги = " + firstBook.getBookName() + " Автор = " + firstBook.getAuthor() + " Год выпуска = " + firstBook.getPublishingYear());
         firstBook.setPublishingYear(2006);
         System.out.println(firstBook.getPublishingYear());
 
@@ -17,7 +17,10 @@ public class Main {
         Book thirdBook = new Book("The Ghost Brigades", new Author("John", "Scalzi"), 2006);
         System.out.println("Название книги = " + thirdBook.getBookName() + " Автор = " + thirdBook.getAuthor() + " Год выпуска = " + thirdBook.getPublishingYear());
 
+        Author author = new Author("John", "Scalzi");
         Author author3 = new Author("John", "Scalzi");
         System.out.println(author3.equals(author));
+
+        System.out.println(thirdBook.equals(firstBook));
     }
 }
