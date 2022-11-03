@@ -17,9 +17,7 @@ public class Author {
         return this.secondName;
     }
 
-    public String toString() {
-        return firstName + " " + secondName;
-    }
+
 
     @Override
     public boolean equals(Object ob) {
@@ -35,4 +33,9 @@ public class Author {
         return Objects.hash(firstName, secondName);
     }
 
+
+    @Override
+    public String toString() {
+        return "Автор: " + firstName + " " + secondName;
+    }
 }
