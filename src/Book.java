@@ -47,8 +47,7 @@ public class Book {
     public String toString() {
         return "Название книги: " + bookName  +
                 " Имя автора: " + author +
-                " Год публикации: " + publishingYear +
-                '}';
+                " Год публикации: " + publishingYear;
     }
 
 }
